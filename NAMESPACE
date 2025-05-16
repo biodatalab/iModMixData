@@ -1,0 +1,3 @@
+export(loadPartialCorGenes)
+export(loadPartialCorMetabolites)
+export(loadPartialCorProt)

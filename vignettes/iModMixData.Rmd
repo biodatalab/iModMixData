@@ -1,0 +1,52 @@
+---
+title: "Using iModMixData"
+author: "Isis Narvaez-Bandera"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Using iModMixData}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+# Introduction
+
+This vignette explains how to use the `iModMixData` package to load example data for the `iModMix` package.
+
+# Loading the Package
+
+First, load the `iModMixData` package:
+
+```{r}
+library(iModMixData)
+```
+
+# Accessing the Data
+The package provides functions to access datasets stored in ExperimentHub.
+
+## Load PartialCorGenes
+```{r, eval=FALSE}
+genes <- loadPartialCorGenes()
+head(genes)
+```
+
+## Load PartialCorMetabolites
+
+```{r, eval=FALSE}
+metabolites <- loadPartialCorMetabolites()
+head(metabolites)
+```
+
+## Load PartialCorProt
+
+```{r, eval=FALSE}
+proteins <- loadPartialCorProt()
+head(proteins)
+```
+
+# Session Information
+
+```{r sessionInfo, echo=FALSE}
+sessionInfo()
+```
+
