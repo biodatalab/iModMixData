@@ -25,21 +25,21 @@ library(iModMixData)
 The package provides functions to access datasets stored in ExperimentHub.
 
 ## Load PartialCorGenes
-```{r, eval=FALSE}
+```{r, eval=TRUE}
 genes <- loadPartialCorGenes()
 head(genes)
 ```
 
 ## Load PartialCorMetabolites
 
-```{r, eval=FALSE}
+```{r, eval=TRUE}
 metabolites <- loadPartialCorMetabolites()
 head(metabolites)
 ```
 
 ## Load PartialCorProt
 
-```{r, eval=FALSE}
+```{r, eval=TRUE}
 proteins <- loadPartialCorProt()
 head(proteins)
 ```
