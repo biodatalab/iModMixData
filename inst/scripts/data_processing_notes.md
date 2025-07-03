@@ -21,15 +21,12 @@ This document describes the origin and processing of the datasets included in th
 
 ---
 
-## Dataset 2: Clear Cell Renal Cell Carcinoma (ccRCC) (Metabolomics)
+## Dataset 2: Lung Adenocarcinoma (LUAD) (Metabolomics)
 
-- **Source**: Derived from 24 normal and 52 tumor ccRCC samples.
+- **Source**: Mouse models (10 wild type, 10 knockout)
 - **References**:
-  - Golkaram et al. (2022)
-  - Tang et al. (2023)
-  - Benedetti et al. (2023)
 - **Data Types**:
-  - 904 identified metabolites from untargeted metabolomics
+  - Features from untargeted metabolomics
 - **Processing**:
   - iModMix was applied to preprocees data, using internal functions "load_data".
   - Partial correlation matrices were computed using internal functions "partial_cors" of the iModMix package.
