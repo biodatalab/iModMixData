@@ -1,4 +1,4 @@
 Title,Description,Genome,SourceType,SourceUrl,SourceVersion,Species,TaxonomyId,Coordinate_1_based,DataProvider,Maintainer,RDataClass,RDataPath,Tags
-PartialCorGenes,Partial correlation genes data,NA,RDS,NA,1,Homo sapiens,9606,FALSE,The Biodata Lab,isis.narvaez@upr.edu,data.frame,iModMixData/ccRCC4_Data/PartialCorGenes.rds,PartialCorrelation
-PartialCorMetabolites,Partial correlation metabolites data,NA,RDS,NA,1,Homo sapiens,9606,FALSE,The Biodata Lab,isis.narvaez@upr.edu,data.frame,iModMixData/FloresData_K_TK/PartialCorMetabolites.rds,PartialCorrelation
-PartialCorProt,Partial correlation proteins data,NA,RDS,NA,1,mus musculus,10090,FALSE,The Biodata Lab,isis.narvaez@upr.edu,data.frame,iModMixData/FloresData_K_TK/PartialCorProt.rds,PartialCorrelation
+PartialCorGenes,Partial correlation genes data,NA,RDS,https://doi.org/10.5281/zenodo.15800282,1,Homo sapiens,9606,FALSE,The Biodata Lab,isis.narvaez@upr.edu,data.frame,iModMixData/ccRCC4_Data/PartialCorGenes.rds,PartialCorrelation
+PartialCorMetabolites,Partial correlation metabolites data,NA,RDS,https://doi.org/10.5281/zenodo.15800282,1,Homo sapiens,9606,FALSE,The Biodata Lab,isis.narvaez@upr.edu,data.frame,iModMixData/FloresData_K_TK/PartialCorMetabolites.rds,PartialCorrelation
+PartialCorProt,Partial correlation proteins data,NA,RDS,https://doi.org/10.5281/zenodo.15800282,1,Mus musculus,10090,FALSE,The Biodata Lab,isis.narvaez@upr.edu,data.frame,iModMixData/FloresData_K_TK/PartialCorProt.rds,PartialCorrelation
