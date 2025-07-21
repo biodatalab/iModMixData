@@ -15,7 +15,8 @@ RoxygenNote: 7.3.2
 biocViews: Transcriptomics, Proteomics, Metabolomics, GeneExpression, ExperimentHubSoftware
 URL: https://github.com/biodatalab/iModMixData
 BugReports: https://github.com/biodatalab/iModMixData/issues
-Imports: ExperimentHub, AnnotationHub
-Suggests: knitr
+Imports: ExperimentHub
+Suggests: knitr,
+          testthat
 Config/testthat/edition: 3
 VignetteBuilder: knitr

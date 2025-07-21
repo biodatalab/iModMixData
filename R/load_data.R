@@ -10,7 +10,7 @@
 #' if (!inherits(genes, "try-error")) head(genes)
 loadPartialCorGenes <- function() {
     eh <- ExperimentHub::ExperimentHub()
-    eh[["EHXXXX"]]
+    as.data.frame(eh[["EH9866"]])
 }
 
 #' Load PartialCorMetabolites data
@@ -24,7 +24,7 @@ loadPartialCorGenes <- function() {
 #' if (!inherits(metabolites, "try-error")) head(metabolites)
 loadPartialCorMetabolites <- function() {
     eh <- ExperimentHub::ExperimentHub()
-    eh[["EHXXXX"]]
+    as.data.frame(eh[["EH9867"]])
 }
 
 #' Load PartialCorProt data
@@ -38,5 +38,5 @@ loadPartialCorMetabolites <- function() {
 #' if (!inherits(proteins, "try-error")) head(proteins)
 loadPartialCorProt <- function() {
     eh <- ExperimentHub::ExperimentHub()
-    eh[["EHXXXX"]]
+    as.data.frame(eh[["EH9868"]])
 }
