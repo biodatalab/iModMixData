@@ -11,13 +11,14 @@ vignette: >
 
 # Introduction
 
-This vignette explains how to use the `iModMixData` package to load example data for the `iModMix` package.
+This vignette explains how to use the `iModMixData` package to 
+load example data for the `iModMix` package.
 
 # Loading the Package
 
 First, load the `iModMixData` package:
 
-```{r}
+```{r load-package}
 library(iModMixData)
 ```
 
