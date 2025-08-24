@@ -1,6 +1,6 @@
 Package: iModMixData
 Title: Data for iModMix Package
-Version: 0.99.2
+Version: 0.99.3
 Authors@R: c(
     person(given = "Isis",
            family = "Narvaez-Bandera",
