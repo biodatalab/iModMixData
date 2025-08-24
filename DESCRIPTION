@@ -1,18 +1,13 @@
 Package: iModMixData
 Title: Data for iModMix Package
-Version: 0.99.2
+Version: 0.99.3
 Authors@R: c(
     person(given = "Isis",
            family = "Narvaez-Bandera",
            role = c("aut", "cre"),
            email = "isis.narvaez@upr.edu",
-           comment = c(ORCID = "0000-0001-7320-618X")),
-    person(given = "Funding",
-           family = "Sources",
-           role = "fnd",
-           comment = "This work was supported by the Biostatistics and Bioinformatics Shared Resource and the Proteomics and Metabolomics Shared Resource at the H. Lee Moffitt Cancer Center & Research Institute (P30CA076292), the Cancer Research Institute Technology Impact Award; and research grants NIH T32CA233399, NIH U54 HD090258; and the Anna D. Valentine and Charles L. Oehler Award. The content is those of the authors and does not represent the NIH. All authors confirm there are no conflicts of interest.")
-          )
-Description: To load example data for the iModMix package..
+           comment = c(ORCID = "0000-0001-7320-618X")))
+Description: Provides example datasets for the iModMix package, including gene, protein, and metabolite partial correlation matrices derived from ccRCC4 and FloresData_K_TK studies. The data are preprocessed and ready to use for testing, demonstrating iModMix workflows, and exploring correlation networks.
 License: GPL-3
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
