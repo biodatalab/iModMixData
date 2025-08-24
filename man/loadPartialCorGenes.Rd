@@ -3,16 +3,36 @@
 \name{loadPartialCorGenes}
 \alias{loadPartialCorGenes}
 \title{Load PartialCorGenes data}
+\source{
+ccRCC4 study. Original data processed for iModMix.
+}
 \usage{
 loadPartialCorGenes()
 }
 \value{
-A data.frame
+A \code{data.frame} with genes as rows and samples as columns.
 }
 \description{
-This function loads the PartialCorGenes dataset from ExperimentHub.
+Loads the PartialCorGenes dataset from ExperimentHub.
+}
+\details{
+The dataset contains partial correlation values between genes derived from the ccRCC4 study.
+The original expression data were preprocessed using \code{load_data()} which includes:
+\itemize{
+\item Filtering features with >10\% missing values
+\item Removing features with low variance
+\item Scaling and KNN imputation of missing values
+}
+
+Partial correlations were then calculated using \code{partial_cors()} with rho = 0.25.
+
+Rows correspond to genes, columns correspond to samples. Each entry represents the
+partial correlation of the gene with other genes, adjusted for covariates.
 }
 \examples{
+\dontrun{
 genes <- loadPartialCorGenes()
-if (!inherits(genes, "try-error")) head(genes)
+head(genes)
+dim(genes)
+}
 }

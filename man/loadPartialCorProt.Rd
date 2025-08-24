@@ -3,16 +3,36 @@
 \name{loadPartialCorProt}
 \alias{loadPartialCorProt}
 \title{Load PartialCorProt data}
+\source{
+FloresData_K_TK study. Original data processed for iModMix.
+}
 \usage{
 loadPartialCorProt()
 }
 \value{
-A data.frame
+A \code{data.frame} with proteins as rows and samples as columns.
 }
 \description{
-This function loads the PartialCorProt dataset from ExperimentHub.
+Loads the PartialCorProt dataset from ExperimentHub.
+}
+\details{
+The dataset contains partial correlation values between proteins derived from the FloresData_K_TK study.
+Data were preprocessed similarly to genes and metabolites:
+\itemize{
+\item Filtering features with >10\% missing values
+\item Removing features with low variance
+\item Scaling and KNN imputation of missing values
+}
+
+Partial correlations were calculated using \code{partial_cors()} with rho = 0.25.
+
+Rows correspond to proteins, columns correspond to samples. Each entry represents the
+partial correlation of the protein with other proteins, adjusted for covariates.
 }
 \examples{
+\dontrun{
 proteins <- loadPartialCorProt()
-if (!inherits(proteins, "try-error")) head(proteins)
+head(proteins)
+dim(proteins)
+}
 }

@@ -11,8 +11,18 @@ vignette: >
 
 # Introduction
 
-This vignette explains how to use the `iModMixData` package to 
-load example data for the `iModMix` package.
+
+The `iModMixData` package provides example datasets for the `iModMix` package.  
+These datasets are preprocessed and ready to use for testing and demonstrating the iModMix workflows.  
+
+The datasets include:
+
+- **PartialCorGenes**: partial correlation values between genes (ccRCC4 study)  
+- **PartialCorMetabolites**: partial correlation values between metabolites (FloresData_K_TK study)  
+- **PartialCorProt**: partial correlation values between proteins (FloresData_K_TK study)  
+
+These datasets allow users to explore correlation networks and test reproducible analysis pipelines.
+
 
 # Loading the Package
 
@@ -28,22 +38,44 @@ The package provides functions to access datasets stored in ExperimentHub.
 ## Load PartialCorGenes
 ```{r, eval=TRUE}
 genes <- loadPartialCorGenes()
-head(genes)
+
+# Preview first rows
+genes[1:5, 1:5]
+
+# Check dimensions
+dim(genes)
 ```
+The PartialCorGenes dataset contains genes as rows and samples as columns.
+Each entry represents a partial correlation value of a gene with other genes, adjusted for covariates.
+Data were preprocessed using load_data() (filtering low-variance features, KNN imputation, scaling) and partial correlations were calculated using partial_cors().
+
+This dataset can be used to explore gene correlation networks and for demonstrating iModMix workflows.
 
 ## Load PartialCorMetabolites
 
 ```{r, eval=TRUE}
 metabolites <- loadPartialCorMetabolites()
-head(metabolites)
+metabolites[1:5, 1:5]
+dim(metabolites)
 ```
+The PartialCorMetabolites dataset contains metabolites as rows and samples as columns.
+Partial correlations can be used to study metabolic networks or integrate with other omics datasets.
 
 ## Load PartialCorProt
 
 ```{r, eval=TRUE}
 proteins <- loadPartialCorProt()
-head(proteins)
+proteins[1:5, 1:5]
+dim(proteins)
 ```
+The PartialCorProt dataset contains proteins as rows and samples as columns.
+Users can explore protein-protein correlations or use it in multi-omics analyses.
+
+Suggested Uses
+
+- Testing and demonstrating iModMix pipelines
+- Exploratory analysis of gene, metabolite, and protein correlations
+- Reproducible examples in publications or teaching
 
 # Session Information
 
