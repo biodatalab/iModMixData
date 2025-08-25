@@ -16,7 +16,8 @@ A \code{data.frame} with metabolites as rows and samples as columns.
 Loads the PartialCorMetabolites dataset from ExperimentHub.
 }
 \details{
-The dataset contains partial correlation values between metabolites derived from the FloresData_K_TK study.
+The dataset contains partial correlation values between metabolites derived
+from the FloresData_K_TK study.
 Data were preprocessed similarly to genes:
 \itemize{
 \item Filtering features with >10\% missing values
@@ -26,13 +27,12 @@ Data were preprocessed similarly to genes:
 
 Partial correlations were calculated using \code{partial_cors()} with rho = 0.25.
 
-Rows correspond to metabolites, columns correspond to samples. Each entry represents the
-partial correlation of the metabolite with other metabolites, adjusted for covariates.
+Rows correspond to metabolites, columns correspond to samples. Each entry
+represents the partial correlation of the metabolite with other metabolites,
+adjusted for covariates.
 }
 \examples{
-\dontrun{
 metabolites <- loadPartialCorMetabolites()
 head(metabolites)
 dim(metabolites)
-}
 }

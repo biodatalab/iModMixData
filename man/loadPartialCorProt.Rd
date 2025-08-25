@@ -16,7 +16,8 @@ A \code{data.frame} with proteins as rows and samples as columns.
 Loads the PartialCorProt dataset from ExperimentHub.
 }
 \details{
-The dataset contains partial correlation values between proteins derived from the FloresData_K_TK study.
+The dataset contains partial correlation values between proteins derived
+from the FloresData_K_TK study.
 Data were preprocessed similarly to genes and metabolites:
 \itemize{
 \item Filtering features with >10\% missing values
@@ -26,13 +27,12 @@ Data were preprocessed similarly to genes and metabolites:
 
 Partial correlations were calculated using \code{partial_cors()} with rho = 0.25.
 
-Rows correspond to proteins, columns correspond to samples. Each entry represents the
-partial correlation of the protein with other proteins, adjusted for covariates.
+Rows correspond to proteins, columns correspond to samples. Each entry
+represents the partial correlation of the protein with other proteins,
+adjusted for covariates.
 }
 \examples{
-\dontrun{
 proteins <- loadPartialCorProt()
 head(proteins)
 dim(proteins)
-}
 }
