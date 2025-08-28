@@ -1,6 +1,6 @@
 Package: iModMixData
 Title: Data for iModMix Package
-Version: 0.99.5
+Version: 0.99.6
 Authors@R: c(
     person(given = "Isis",
            family = "Narvaez-Bandera",
@@ -15,7 +15,7 @@ License: GPL-3
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.2
-biocViews: Transcriptomics, Proteomics, Metabolomics, GeneExpression, ExperimentHubSoftware
+biocViews: ExperimentData, ExpressionData, MassSpectrometryData, ExperimentHub
 URL: https://github.com/biodatalab/iModMixData
 BugReports: https://github.com/biodatalab/iModMixData/issues
 Imports: ExperimentHub
